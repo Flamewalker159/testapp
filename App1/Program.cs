@@ -70,11 +70,8 @@ class Program
     static void CheckEvenOrOdd()
     {
         Console.Clear();
-<<<<<<< HEAD
         Console.WriteLine("Введите число: ");
-=======
-        Console.Write("Введите число: ");
->>>>>>> 56cbb563a646b9fc092bad9b5b1300ceb7ddbe30
+
         if (int.TryParse(Console.ReadLine(), out int number))
         {
             if (number % 2 == 0)
@@ -88,11 +85,7 @@ class Program
         }
         else
         {
-<<<<<<< HEAD
             Console.WriteLine("Вы ввели неккоректно число.");
-=======
-            Console.WriteLine("Некорректный ввод числа.");
->>>>>>> 56cbb563a646b9fc092bad9b5b1300ceb7ddbe30
         }
     }
 }
