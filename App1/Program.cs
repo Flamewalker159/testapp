@@ -66,4 +66,25 @@ class Program
             Console.WriteLine("Некорректный ввод числа.");
         }
     }
+
+    static void CheckEvenOrOdd()
+    {
+        Console.Clear();
+        Console.WriteLine("Введите число: ");
+        if (int.TryParse(Console.ReadLine(), out int number))
+        {
+            if (number % 2 == 0)
+            {
+                Console.WriteLine($"{number} - четное число.");
+            }
+            else
+            {
+                Console.WriteLine($"{number} - нечетное число.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Вы ввели неккоректно число.");
+        }
+    }
 }
