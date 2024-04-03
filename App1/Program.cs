@@ -88,4 +88,10 @@ class Program
             Console.WriteLine("Вы ввели неккоректно число.");
         }
     }
+
+    static void DisplayGreeting()
+    {
+        Console.Clear();
+        Console.WriteLine("Привет, пользователь!");
+    }
 }
