@@ -26,7 +26,7 @@ class Program
                         CalculateSquare();
                         break;
                     case 3:
-                        //CheckEvenOrOdd();
+                        CheckEvenOrOdd();
                         break;
                     case 4:
                         //DisplayGreeting();
@@ -60,6 +60,27 @@ class Program
         if (int.TryParse(Console.ReadLine(), out int number))
         {
             Console.WriteLine($"Квадрат числа {number} равен {number * number}");
+        }
+        else
+        {
+            Console.WriteLine("Некорректный ввод числа.");
+        }
+    }
+
+    static void CheckEvenOrOdd()
+    {
+        Console.Clear();
+        Console.Write("Введите число: ");
+        if (int.TryParse(Console.ReadLine(), out int number))
+        {
+            if (number % 2 == 0)
+            {
+                Console.WriteLine($"{number} - четное число.");
+            }
+            else
+            {
+                Console.WriteLine($"{number} - нечетное число.");
+            }
         }
         else
         {
