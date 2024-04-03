@@ -20,10 +20,10 @@ class Program
                 switch (choice)
                 {
                     case 1:
-                        //DisplayCurrentDateTime();
+                        DisplayCurrentDateTime();
                         break;
                     case 2:
-                        //CalculateSquare();
+                        CalculateSquare();
                         break;
                     case 3:
                         //CheckEvenOrOdd();
@@ -51,5 +51,19 @@ class Program
     {
         Console.Clear();
         Console.WriteLine($"Текущая дата и время: {DateTime.Now}");
+    }
+
+    static void CalculateSquare()
+    {
+        Console.Clear();
+        Console.Write("Введите число: ");
+        if (int.TryParse(Console.ReadLine(), out int number))
+        {
+            Console.WriteLine($"Квадрат числа {number} равен {number * number}");
+        }
+        else
+        {
+            Console.WriteLine("Некорректный ввод числа.");
+        }
     }
 }
