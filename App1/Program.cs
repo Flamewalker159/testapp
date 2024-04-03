@@ -29,7 +29,7 @@ class Program
                         CheckEvenOrOdd();
                         break;
                     case 4:
-                        //DisplayGreeting();
+                        DisplayGreeting();
                         break;
                     case 0:
                         Console.Clear();
